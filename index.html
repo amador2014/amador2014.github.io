@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/globalStyle.css" type="text/css" />
+    <link type="image/png" rel="icon" href="./assets/img/icons/favicon.png" />
     
     <title>Gabriel Amador</title>
 </head>
@@ -16,15 +17,15 @@
             <h1>Gabriel Rodrigues Amador </h1>
             <p>Estudante | Desenvolvedor júnior | Entusiasta</p>
             <div>
-                <a target="_blank" href="https://github.com/amador2014"><img src="./assets/img/github 1.svg" alt="Icone Github"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/gabriel-rodrigues-amador-b70629182/"><img src="./assets/img/linkedin 1.svg" alt="Icone LinkedIn"></a>
-                <a target="_blank" href="https://gabriel-amador.medium.com/"><img src="./assets/img/medio 1.svg" alt="Icone Medium"></a>
-                <a target="_blank" href="https://br.pinterest.com/gabrielramador2014/_created/"><img src="./assets/img/pinterest 1.svg" alt="Icone Pinterest"></a>
+                <a target="_blank" href="https://github.com/amador2014"><img src="./assets/img/icons/github 1.svg" alt="Icone Github"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/gabriel-rodrigues-amador-b70629182/"><img src="./assets/img/icons/linkedin 1.svg" alt="Icone LinkedIn"></a>
+                <a target="_blank" href="https://gabriel-amador.medium.com/"><img src="./assets/img/icons/medio 1.svg" alt="Icone Medium"></a>
+                <a target="_blank" href="https://br.pinterest.com/gabrielramador2014/_created/"><img src="./assets/img/icons/pinterest 1.svg" alt="Icone Pinterest"></a>
                 <!-- <a target="_blank" href="#"><img src="./assets/img/discordia 1.svg" alt="Icone Discord"></a> -->
             </div>
         </section>
 
-        <section class="info-container none">
+        <section class="info-container">
             <div class="sobre">
                 <h2>Sobre</h2>
                 <span class="sub-horizontal-line"></span>
@@ -52,61 +53,187 @@
             </div>
         </section>
 
-        <section class="tech-content none">
+        <section class="tech-content ">
             <ul>
-                <li class="selected"><a href="#">Backend</a></li>
-                <li><a href="#">Frontend</a></li>
-                <li><a href="#">Mobile</a></li>
-                <li><a href="#">Database</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Outros</a></li>
+                <li onclick="activateTab(0)" class="selected"><a>Backend</a></li>
+                <li onclick="activateTab(1)"><a>Frontend</a></li>
+                <li onclick="activateTab(2)"><a>Mobile</a></li>
+                <li onclick="activateTab(3)"><a>Database</a></li>
+                <li onclick="activateTab(4)"><a>Design</a></li>
+                <li onclick="activateTab(5)"><a>Outros</a></li>
             </ul>
 
             <div class="cards">
                 <div class="card-backend">
-                    <div>
-                        <h3>Backend</h3>
-                        <span class="sub-horizontal-line"></span>
-                        <p>Desenvolvo projetos com ASP.NET com experiência em Web Api MVC e Razor Syntax, já pude brincar com NodeJs em dois projetos.</p>
+                    <div class="card-content">
+                        <div>
+                            <h3>Backend</h3>
+                            <p>Desenvolvo projetos com ASP.NET Core com experiências como em MVC, EfCore e Razor Syntax, já pude brincar também com NodeJs em alguns projetos.</p>
+                        </div>
+                        
                         <div>
                             <img src="./assets/img/NET.png" alt="Dot Net">
                             <img src="./assets/img/Node.png" alt="NodeJs">
                         </div>
                     </div>
-
-                    <div>
-                        <p>2020</p>
+                        
+                    <div class="experience-years">
                         <p>2019</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="card-frontend none">
+                    <div class="card-content">
+                        <div>
+                            <h3>Frontend</h3>
+                            <p>Habilidade com o framework ReactJs, testes com jest/enzyme e capacidades fundamentais em HTML, CSS Javascript e Bootstrap.</p>
+                        </div>
+                        
+                        <div>
+                            <img src="./assets/img/React.png" alt="React">
+                            <img src="./assets/img/Javascript.png" alt="Javascript">
+                            <img src="./assets/img/Bootstrap.png" alt="Bootstrap">
+                        </div>
+                    </div>
+                        
+                    <div class="experience-years">
+                        <p>2019</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="card-mobile none">
+                    <div class="card-content">
+                        <div>
+                            <h3>Mobile</h3>
+                            <p>Maior capacidade no desenvolvimento mobile com React Native, tenho desenvolvido também soluções com Xamarin Forms</p>
+                        </div>
+                        
+                        <div>
+                            <img src="./assets/img/React.png" alt="React Native">
+                            <img src="./assets/img/Xamarin.png" alt="Xamarin">
+                        </div>
+                    </div>
+                        
+                    <div class="experience-years">
+                        <p>2019</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="card-database none">
+                    <div class="card-content">
+                        <div>
+                            <h3>Database</h3>
+                            <p>Experiência com construção de bases de dados relacionais e NoSql. Contrução de diagramações e arquitetura entre relacionamentos de entidades, criação de procedures etc. </p>
+                        </div>
+                        
+                        <div>
+                            <img src="./assets/img/SqlServer.png" alt="SQL Server">
+                            <img src="./assets/img/MongoDb.png" alt="MongoDb">
+                            <img src="./assets/img/Sqlite.png" alt="SqLite">
+                        </div>
+                    </div>
+                        
+                    <div class="experience-years">
+                        <p>2019</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="card-design none">
+                    <div class="card-content">
+                        <div>
+                            <h3>Design</h3>
+                            <p>Formação técnica em Multimídia, criatividade para inovar, capacidade para criar de interfaces ou elementos digitais belos e intuitivos dentre outros. </p>
+                        </div>
+                        
+                        <div>
+                            <img src="./assets/img/Figma.png" alt="Figma">
+                            <img src="./assets/img/Ilustrator.png" alt="Adobe Ilustrator">
+                            <img src="./assets/img/Xd.png" alt="Adobe XD">
+                        </div>
+                    </div>
+                        
+                    <div class="experience-years">
+                        <p>2019</p>
+                        <p>2020</p>
+                    </div>
+                </div>
+
+                <div class="card-outros none">
+                    <div class="card-content">
+                        <div>
+                            <h3>Outros</h3>
+                            <p> Essas são metodologias e ferramentas que utilizo no dia a dia como Git, Github e Scrum ou que já pude me aventurar como a Engine Unity.</p>
+                        </div>
+                        
+                        <div>
+                            <img src="./assets/img/Git.png" alt="Git">
+                            <img src="./assets/img/Github.png" alt="Github">
+                            <img src="./assets/img/Scrum.png" alt="Scrum">
+                            <img src="./assets/img/Unity.png" alt="Unity">
+                        </div>
+                    </div>
+                        
+                    <div class="experience-years">
+                        <p>2019</p>
+                        <p>2020</p>
                     </div>
                 </div>
 
             </div>
-
         </section>
 
-        <section class="contact-container none">
-            <div>
-                <h2>Contato</h2>
-                <span class="sub-horizontal-line"></span>
-                <p>Me mande uma mensagem! responderei o mais rápido possível :)</p>
+        <section class="contact-container">
+            <div class="contact-content">
+                <div>
+                    <h2>Contato</h2>
+                    <span class="sub-horizontal-line"></span>
+                </div>
+                <p>Me mande uma mensagem! Responderei o mais rápido possível :)</p>
             </div>
 
-            <div>
-                <button>
-                    <img src="./assets/img/gmail-icon.svg" alt="Icone Gmail">
+            <div class="contact-buttons" title="gabrielrmador2014@gmail.com">
+                <a href="mailto:gabrielrmador2014@gmail.com?subject=Networking&body=Me-diga-alguma-coisa:D">
+                    <img src="./assets/img/icons/gmail-icon.svg" alt="Icone Gmail">
                     <p>Gmail</p>
-                </button>
+                </a>
 
-                <button>
-                    <img src="./assets/img/whatsapp 1.svg" alt="Icone Whatsapp">
+                <a href="https://wa.me/5511946694649" title="5511946694649" target="_blank">
+                    <img src="./assets/img/icons/whatsapp 1.svg" alt="Icone Whatsapp">
                     <p>Whatsapp</p>
-                </button>
+                </a>
             </div>
         </section>
     </main>
 
-    <footer class="none">
+    <footer class="footer">
         <p>Todos direitos reservados, 2020</p>
     </footer>
+
+    <script>
+        var tabs = document.querySelectorAll('ul li');
+        var cards = document.querySelectorAll('.cards > div');
+
+        function activateTab(indexTab){
+            tabs.forEach(tab => {
+                tab.classList.remove('selected');
+            });
+
+            tabs[indexTab].classList.add("selected");
+
+            activateCard(indexTab);
+        }
+
+        function activateCard(index){
+            cards.forEach(card => {
+                card.classList.add("none");
+            });
+            
+            cards[index].classList.remove('none');
+        }
+    </script>
 </body>
 </html>
